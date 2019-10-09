@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RGB to Hex Converter</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="item-wrapper d-flex-column justify-content-center align-items-center">
+      <div class="row mb-3 d-flex-column justify-content-center align-items-center">
+        <div class="col-12 red-group d-flex justify-content-center align-items-center">
+          <button class="red-button rounded mr-3 px-3 py-2">R</button>
+          <form class="col-5 mr-3">
+            <div class="form-group">
+              <label for="formControlRange"></label>
+              <input type="range" min="0" max="255" value="0" class="form-control-range red-input"
+                id="formControlRange">
+            </div>
+          </form>
+          <button class="red-parameter rounded">0</button>
+        </div>
+
+        <div class="col-12 green-group d-flex justify-content-center align-items-center">
+          <button class="green-button rounded mr-3 px-3 py-2">G</button>
+          <form class="col-5 mr-3">
+            <div class="form-group">
+              <label for="formControlRange"></label>
+              <input type="range" min="0" max="255" value="0" class="form-control-range green-input"
+                id="formControlRange">
+            </div>
+          </form>
+          <button class="green-parameter rounded">0</button>
+        </div>
+
+        <div class="col-12 blue-group d-flex justify-content-center align-items-center">
+          <button class="blue-button rounded mr-3 px-3 py-2">B</button>
+          <form class="col-5 mr-3">
+            <div class="form-group">
+              <label for="formControlRange"></label>
+              <input type="range" min="0" max="255" value="0" class="form-control-range blue-input"
+                id="formControlRange">
+            </div>
+          </form>
+          <button class="blue-parameter rounded">0</button>
+        </div>
+      </div>
+
+      <div class="code-wrapper text-center">
+        <div class="code-background d-inline-block rounded">
+          <h1 class="color-code mb-0 px-3 py-1">#000000</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
