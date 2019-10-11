@@ -11,6 +11,27 @@ html, body, .container {
   border: 1px solid #ffffff;
 }
 
+/* placeholder顏色須依瀏覽器分別設置，且chorme瀏覽器的placeholder需在鍵盤輸入後才會消失，所以利用CSS後寫設定會覆蓋先寫設定的特性，搭配js中input欄位監聽器設定之判斷式刪除或增加class，達成點擊輸入欄位時，placeholder消失，若沒有輸入0以外的值，則focusout時將已刪除之class加回;若值有改變，則保留改變的值 */
+.red-parameter::-webkit-input-placeholder {
+  color: #ff0000;
+}
+
+.green-parameter::-webkit-input-placeholder {
+  color: #00ff00;
+}
+
+.blue-parameter::-webkit-input-placeholder {
+  color: #0000ff;
+}
+
+.red-placeholder::-webkit-input-placeholder, .blue-placeholder::-webkit-input-placeholder {
+  color:#ffffff;
+}
+
+.green-placeholder::-webkit-input-placeholder {
+  color: #000000;
+}
+
 .green-button, .green-parameter {
   background: #00FF00;
   color: #000000;
@@ -35,4 +56,3 @@ html, body, .container {
 h1 {
   color: #000000;
 }
-
