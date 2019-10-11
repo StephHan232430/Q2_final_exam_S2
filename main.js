@@ -1,9 +1,6 @@
 (function () {
   const background = document.querySelector('.container')
   const presentPanel = document.querySelector('.item-wrapper')
-  const redBar = document.querySelector('.red-input')
-  const greenBar = document.querySelector('.green-input')
-  const blueBar = document.querySelector('.blue-input')
   const redValue = document.querySelector('.red-parameter')
   const greenValue = document.querySelector('.green-parameter')
   const blueValue = document.querySelector('.blue-parameter')
